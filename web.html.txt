@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <!--head-->
+    <head>
+        <title>Capital Green Space Project - Value in terms of education</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.ed.ac.uk/sites/all/themes/uoe/favicon/favicon-32x32.png?t=rlhfo6" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.ed.ac.uk/sites/all/themes/uoe/favicon/favicon-16x16.png?t=rlhfo6" />
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+       <!--buttons style-->
+        <style>
+            .button {
+                background: none;
+                color: black;
+                font-size:28px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10px;
+                text-decoration: none;
+            }
+            .button:hover{
+
+                text-shadow: 2px 2px grey;
+            }
+            .button::after {
+                content: "|"; /* 添加竖杠字符作为伪元素的内容 */
+                margin: 0 10px; /* 调整分隔符与按钮之间的间距 */
+                color: gray; /* 设置分隔符颜色 */
+            }
+
+            /* 去除最后一个按钮后的分隔符 */
+            .button:last-child::after {
+                content: none; /* 不显示最后一个按钮后的分隔符 */
+            }
+            .navigation_bar{
+                position: fixed;
+                top: 0;
+                width: 100%;
+                border-bottom: 1px solid;
+                padding-bottom: 20px;
+                background-color: white;
+            }
+
+            .campus img {
+                max-width: 100%;
+                margin-left: 0;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                padding-top: 35px;
+            }
+
+            .right-align1{
+                margin-left: 565px;
+            }
+
+            .right-align2{
+                margin-left: 135px;
+            }
+
+            .u-align-center{
+                text-align: center;
+                margin: 0 auto;
+                max-width: 800px
+            }
+
+            html, body {
+            margin: 0;
+            padding: 0;
+            }
+            .rectangular {
+                width: 800px; /* 设置矩形的宽度 */
+                height: 800px; /* 设置矩形的高度 */
+                background-color: white; /* 设置矩形的背景颜色 */
+                border: 2px solid gray; /* 设置矩形的边框样式 */
+            }
+            .study_area{
+                display: flex;
+                align-items: center;
+                margin: 80px;
+            }
+            .center-vertical{
+                display: flex;
+                text-align:center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .line_text_and_image{
+                display: flex;
+                align-items: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--navigation bar-->
+            <div class="navigation_bar">
+                <ul id="tab"></ul>
+                <a href="home.html" class="button">Home</a>
+                <a href="use.html" class="button">How to use</a>
+                <a href="Map.html" class="button">Map</a>
+                <a href="history.html" class="button">School History</a>
+                <a href="report.html" class="button">Report</a>
+                <a href="about.html" class="button">About us</a>
+            </div>
+
+            <!--UOE logo-->
+            <div class="logo">
+                <img src="./logo.jpg" alt="logo" width="415" height="128">
+                <div class="right-align1">
+                    <h1>CAPITAL GREEN SPACE PROJECT</h1>
+                    <div class="right-align2">
+                        <p1>VALUE IN TERMS OF EDUCATION</p1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campus">
+                <a><img src="./campus.jpg" alt="campus" width="2550" height="700"></a>
+            </div>
+            
+        </header>
+
+        <article>
+            <!--Header-->
+            <div class="u-align-center">
+                <h1>Introduction</h1>
+                <p1>In Edinburgh, secondary school-aged children deprived of social and material resources have
+                    poorer educational outcomes1
+                    
+                    . To address this attainment gap, local and national
+                    policymakers’ direct attention and funding to supportive frameworks in secondary schools
+                    orientated toward the health and wellbeing of children surrounded by social and material
+                    deprivation1,2
+                    
+                    . However, comparatively less policy attention is directed toward children
+                    deprived of environmental resources such as greenspace, despite evidence of significant,
+                    positive associations with cognitive3-8
+                    
+                    , behavioural
+                    
+                    9-11, and academic performance12-14 of
+                    secondary school-aged children (see Appendix 7.1). As a result, metrics of environmental
+                    deprivation (ED) have the potential to provide unique insight to the barriers to educational
+                    outcomes alongside social and material deprivation and thus improve the effectiveness of local
+                    and national education policy1,15-18
+                    
+                    . Nonetheless, to date, no research methodology or dataset
+                    relating secondary school-aged children, ED, and social/material deprivation is available for
+                    Edinburgh.</p1>
+            </div>
+
+            <!--Footer-->
+            <footer>
+            </footer>
+        </article>
+
+        <article>
+            <div class="study_area">
+                <div class="line_text_and_image">
+                    <a><img src="./Study_Area.png" alt="Study Area" width="1200" height="800"></a>
+                    <div class="rectangular">
+                        <a class="center-vertical">
+                            <h1>STUDY AREA</h1>
+                            <h3>Secondary schools within the CEC Community Council Boundaries were retrieved from the
+                                most recent national school dataset from the Scottish Government, totalling 32 schools53 (see
+                                Figure 3.1). Type of school was derived from the same dataset which categorises Roman Catholic 
+                                as distinct from local authority schools despite being under CEC authority54.vThe historical differences between Roman 
+                                Catholic and local authority schools were considered</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>        
+    </body>
+</html>
